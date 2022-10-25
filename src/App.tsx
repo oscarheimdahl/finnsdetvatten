@@ -14,7 +14,7 @@ interface WaterRow {
   last_water: number;
 }
 
-const WATER_DEADLINE_SECONDS = 200;
+const WATER_DEADLINE_SECONDS = 60 * 60 * 24 * 14; // Two weeks
 const FILLUP_DURATION = 2;
 
 const useTicker = (action: () => void, shouldUpdate: boolean, interval: number) => {

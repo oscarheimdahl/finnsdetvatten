@@ -7,7 +7,7 @@
 :root {
   --green: rgba(57, 139, 78, 0.87);
   --blue: #4a6fe9;
-  --blue2: #3f60c9;
+  --blue2: #4567d6;
 
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -62,7 +62,6 @@ body,
   height: 100%;
   width: 100%;
   position: relative;
-  /* background-color: var(--blue); */
   background-image: linear-gradient(180deg, var(--blue) 0% 40%, var(--blue2));
 
   transition: transform linear;
@@ -98,6 +97,9 @@ body,
 }
 
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
   font-size: 1.5rem;
   border-radius: 10px;
@@ -112,4 +114,15 @@ button {
 button:hover {
   cursor: pointer;
   transform: translateY(3px);
+}
+
+@media screen and (max-width: 800px) {
+  .water-bar {
+    height: 20rem;
+    width: 6.6666rem;
+  }
+  button {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
 }
